@@ -97,7 +97,7 @@
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
+  --destructive: oklch(70.216% 0.18922 22.207);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
@@ -114,6 +114,16 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@theme {
+  --color-primary: #4F46E5;
+  --color-secondary: #8B5CF6;
+  --color-background: #0F0F1A;
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #C7D2FE;
+  --font-sora: "Sora, sans-serif";
+  --font-inter: "Inter, sans-serif";
 }
 
 @layer base {
