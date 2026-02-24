@@ -117,13 +117,15 @@
 }
 
 @theme {
-  --color-primary: #4F46E5;
-  --color-secondary: #8B5CF6;
-  --color-background: #0F0F1A;
-  --color-text-primary: #F9FAFB;
-  --color-text-secondary: #C7D2FE;
+  --color-primary: #4f46e5;
+  --color-secondary: #8b5cf6;
+  --color-background: #0f0f1a;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #c7d2fe;
   --font-sora: "Sora, sans-serif";
   --font-inter: "Inter, sans-serif";
+  --inset-shadow-badge: inset 0 1px 24px 2px var(--color-primary);
+  --inset-shadow-aboutbox: inset 0 0 32px 0px rgba(139, 92, 246, 0.5);
 }
 
 @layer base {
