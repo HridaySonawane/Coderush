@@ -1,5 +1,5 @@
 import React from "react";
-import { PowerSync } from "./Landing/Logo";
+import { PowerSync } from "./Logo";
 import { Facebook, Instagram, Linkedin, X, Youtube } from "lucide-react";
 import Link from "next/link";
 
