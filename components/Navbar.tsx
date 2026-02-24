@@ -1,16 +1,23 @@
 import React from "react";
+import Link from "next/link";
 import { PowerSync } from "./Logo";
 
 const Navbar = () => {
   return (
-    <div className="flex w-full h-fit bg-background justify-start items-center gap-5">
-      <div className="flex w-fit h-fit justify-center items-center p-2.5 pr-0">
-        <PowerSync className="w-6 h-6" />
+    <div className="flex w-full h-20 bg-background justify-start items-center gap-10 px-8 shadow-md">
+      <div className="flex w-fit h-fit justify-center items-center p-4 pr-0">
+        <Link href="/">
+          <PowerSync className="w-10 h-10 cursor-pointer hover:opacity-80 transition-opacity" />
+        </Link>
       </div>
-      <div className="flex justify-center items-center gap-5 w-fit h-fit">
-        <p className="text-text-primary font-inter font-medium text-sm">About</p>
-        <p className="text-text-primary font-inter font-medium text-sm">Team</p>
-        <p className="text-text-primary font-inter font-medium text-sm">Community</p>
+      <div className="flex justify-center items-center gap-10 w-fit h-fit">
+        <Link href="/about">
+          <p className="text-text-primary font-inter font-semibold text-lg hover:text-blue-500 transition-colors cursor-pointer">About</p>
+        </Link>
+        <Link href="/team">
+          <p className="text-text-primary font-inter font-semibold text-lg hover:text-blue-500 transition-colors cursor-pointer">Team</p>
+        </Link>
+        <p className="text-text-primary font-inter font-semibold text-lg hover:text-blue-500 transition-colors cursor-pointer">Community</p>
       </div>
     </div>
   );
