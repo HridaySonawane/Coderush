@@ -51,10 +51,10 @@ const Footer = () => {
           <Link href="/" className="text-secondary font-inter text-sm">
             Home
           </Link>
-          <Link href="/" className="text-secondary font-inter text-sm">
+          <Link href="/about" className="text-secondary font-inter text-sm">
             About
           </Link>
-          <Link href="/" className="text-secondary font-inter text-sm">
+          <Link href="/team" className="text-secondary font-inter text-sm">
             Team
           </Link>
           <Link href="/" className="text-secondary font-inter text-sm">
