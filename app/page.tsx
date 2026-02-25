@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import About from "@/components/Landing/About";
 import Hero from "@/components/Landing/Hero";
+import Mission from "@/components/Landing/Mission";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Mission />
       <Footer />
     </div>
   );

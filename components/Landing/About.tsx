@@ -4,7 +4,7 @@ import Badge from "../Badge";
 
 const About = () => {
   return (
-    <div className="w-full h-fit flex justify-center items-center gap-6 overflow-visible">
+    <div className="w-full h-fit flex justify-center items-center gap-6 overflow-visible max-w-section">
       <div className="relative overflow-visible flex flex-col w-1/2 justify-center items-center gap-6">
         <div className="absolute w-full h-full opacity-18 bg-primary blur-2xl rounded-full overflow-visible" />
         <h2 className="text-text-primary font-sora text-[64px] z-1">
