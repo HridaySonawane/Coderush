@@ -166,7 +166,7 @@
   --font-inter: "Inter, sans-serif";
   --inset-shadow-badge: inset 0 1px 24px 2px var(--color-primary);
   --inset-shadow-aboutbox: inset 0 0 32px 0px rgba(139, 92, 246, 0.5);
-  --size-section: 1120px
+  --size-section: 70rem;
 }
 
 @layer base {

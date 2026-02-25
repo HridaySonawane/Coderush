@@ -37,7 +37,7 @@ const cards = [
 
 const Mission = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-6 w-full h-fit max-w-section">
+    <div className="flex flex-col justify-center items-center gap-6 w-full h-fit max-w-280">
       <div className="flex flex-col justify-center items-center gap-4.5 w-full h-fit">
         <h2 className="font-sora font-semibold text-[40px] text-text-primary">
           Our Mission
