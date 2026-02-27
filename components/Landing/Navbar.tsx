@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/team", label: "Team" },
-  { href: "#", label: "Community" },
+  // { href: "#", label: "Community" }
 ];
 
 const Navbar = () => {
