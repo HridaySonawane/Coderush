@@ -1,5 +1,6 @@
 import Difference from "@/components/About/Difference";
 import Hero from "@/components/About/Hero";
+import Numbers from "@/components/About/Numbers";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
@@ -10,6 +11,7 @@ const page = () => {
       <Navbar />
       <Hero />
       <Difference />
+      <Numbers />
       <Footer />
     </div>
   );
