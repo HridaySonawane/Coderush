@@ -12,7 +12,7 @@ const Card = ({
 }) => {
   return (
     <div className="w-fit h-full bg-[#05050A] rounded-2xl flex flex-col justify-start items-start gap-8 p-6 pb-8">
-      <div className="flex justify-center items-center p-3 gap-2.5 w-14 h-14">
+      <div className="flex justify-center items-center p-3 gap-2.5 w-14 h-14 bg-linear-to-b from-[-45%] from-secondary to-primary/10 rounded-lg inset-shadow-card-icon">
         {Icon != undefined ? (
           <Icon size={20} color="#FFFFFF" />
         ) : (

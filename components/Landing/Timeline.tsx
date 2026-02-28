@@ -37,6 +37,7 @@ const Timeline = () => {
       {steps.map((step, index) => (
         <TimelineStep
           key={index}
+          step={index+1}
           title={step.title}
           description={step.description}
           button={step.button}

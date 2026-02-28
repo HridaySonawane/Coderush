@@ -1,22 +1,26 @@
 import React from "react";
+import Button from "./Button";
 
 const TimelineStep = ({
   title,
   description,
   button,
+  step
 }: {
   title: string;
   description: string;
   button: boolean;
+  step: number
 }) => {
   return (
     <div className="w-full h-fit flex justify-center items-center gap-2.5">
       {/* Heading */}
-      <div className="flex flex-col w-full h-fit justify-center items-center gap-2.5">
-        <h2 className="w-fit h-fit font-sora font-semibold text-[40px] text-text-primary rounded-md p-2 text-center">
+      <div className="relative flex flex-col w-full h-fit justify-center items-center gap-2.5">
+        <p className="absolute top-15.5 bottom-15.25 right-24.5 left-24.75 m-auto w-fit h-fit font-sora font-medium text-[220px] bg-clip-text text-transparent bg-linear-to-t from-secondary from-42% to-primary blur-[3px] opacity-30">0{step}</p>
+        <h2 className="w-fit h-fit font-sora font-semibold text-[40px] text-text-primary rounded-md p-2 text-center z-1">
           {title}
         </h2>
-        {button == true ? <button>Join Us</button> : <button>Click me</button>}
+        {button == true ? <Button text="Lets Join" variant="primary"/> : null}
       </div>
 
       {/* Progress Bar */}
