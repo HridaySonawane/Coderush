@@ -1,3 +1,4 @@
+import CTA from "@/components/About/CTA";
 import Difference from "@/components/About/Difference";
 import Hero from "@/components/About/Hero";
 import Numbers from "@/components/About/Numbers";
@@ -12,6 +13,7 @@ const page = () => {
       <Hero />
       <Difference />
       <Numbers />
+      <CTA />
       <Footer />
     </div>
   );
