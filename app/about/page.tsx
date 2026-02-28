@@ -1,4 +1,4 @@
-import CTA from "@/components/About/CTA";
+import CTA from "@/components/CTA";
 import Difference from "@/components/About/Difference";
 import Hero from "@/components/About/Hero";
 import Numbers from "@/components/About/Numbers";
