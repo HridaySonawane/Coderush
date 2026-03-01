@@ -1,7 +1,8 @@
 import React from "react";
 import { PowerSync } from "./Logo";
-import { Facebook, Instagram, Linkedin, X, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MessageCircleCode, Twitter, X, Youtube } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -10,30 +11,34 @@ const Footer = () => {
         <div className="flex flex-col w-full h-fit justify-center items-center gap-12">
           <div className="flex flex-col w-full h-fit  justify-start items-start gap-4">
             <div className="flex w-fit h-fit justify-start items-center gap-2">
-              <PowerSync className="w-5 h-5" />
-              <p className="w-fit h-fit font-sora text-text-primary text-[24px]">
+              <Image src="/logo-removebg-preview.png" width={40} height={40} alt="Coderush Logo" className="w-10 h-10 mr-2" />
+              <p className="w-fit h-fit font-sora font-bold text-text-primary text-[24px]">
                 CodeRush - X
               </p>
             </div>
             <p className="w-fit h-fit font-inter text-text-secondary text-[16px]">
-              Small Description
+              Building skills. Creating impact. Growing together.
             </p>
           </div>
           <div className="flex w-full h-fit  justify-start items-start gap-2.5">
             <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
-              <Linkedin className="w-4 h-4 text-text-primary" />
+              <Link href="https://www.linkedin.com/company/coderushx-community">
+                <Linkedin className="w-6 h-6 text-text-primary"/>
+              </Link>
+            </div>
+            {/* <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
+              <Twitter className="w-6 h-6 text-text-primary" />
             </div>
             <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
-              <X className="w-4 h-4 text-text-primary" />
+              <Instagram className="w-6 h-6 text-text-primary" />
             </div>
             <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
-              <Instagram className="w-4 h-4 text-text-primary" />
-            </div>
+              <Facebook className="w-6 h-6 text-text-primary" />
+            </div> */}
             <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
-              <Facebook className="w-4 h-4 text-text-primary" />
-            </div>
-            <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
-              <Youtube className="w-4 h-4 text-text-primary" />
+              <Link href="https://chat.whatsapp.com/HRSV9dESR03KfIJfEwQXf3">
+                <MessageCircleCode className="w-6 h-6 text-text-primary" />
+              </Link>
             </div>
           </div>
         </div>
@@ -57,7 +62,7 @@ const Footer = () => {
           <Link href="/team" className="text-secondary font-inter text-sm">
             Team
           </Link>
-          <Link href="/" className="text-secondary font-inter text-sm">
+          <Link href="/community" className="text-secondary font-inter text-sm">
             Community
           </Link>
         </div>
@@ -82,11 +87,11 @@ const Footer = () => {
           <p className="w-fit h-fit font-sora text-xl text-text-secondary">
             Contact Us
           </p>
-          <Link href="/" className="text-secondary font-inter text-sm">
+          <p className="text-text-secondary font-inter text-sm">
             You can reach us at
-          </Link>
-          <Link href="mailto:contact@coderush.com" className="text-secondary font-inter text-sm">
-            contact@coderush.com
+          </p>
+          <Link href="mailto:coderushx.official@gmail.com" className="text-secondary font-inter text-sm">
+            coderushx.official@gmail.com
           </Link>
         </div>
       </div>

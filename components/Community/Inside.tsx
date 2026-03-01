@@ -1,50 +1,35 @@
-"use client";
-
 import React from "react";
 import Card from "../Card";
-import { motion } from "framer-motion";
-import { Bell, ChartLine, Newspaper, Trophy, UserCheck, Wallet } from "lucide-react";
+import { Bell, ChartLine, icons, Newspaper, Wallet } from "lucide-react";
 
 const cards = [
   {
     title: "Build Projects",
     description:
       "Turn ideas into real-world applications through collaborative and hands-on development.",
-    icon: Wallet
+    icon: Wallet,
   },
   {
     title: "Learn Together",
     description:
       "Grow alongside peers through shared knowledge, discussions, and guided learning.",
-    icon: ChartLine
+    icon: ChartLine,
   },
   {
     title: "Explore Domains",
     description:
       "Dive into diverse tech fields and discover what excites you the most.",
-    icon: Bell
+    icon: Bell,
   },
   {
     title: "Workshops & Sessions",
     description:
       "Interactive sessions and tech talks designed to make complex topics simple.",
-    icon: Newspaper
-  },
-  {
-    title: "Hackathons & Challenges",
-    description:
-      "Compete, collaborate, and innovate through internal hackathons and coding competitions that sharpen your skills.",
-    icon: Trophy
-  },
-  {
-    title: "Innovation Culture",
-    description:
-      "Experiment freely, prototype boldly, and build solutions to real problems.",
-    icon: UserCheck
+    icon: Newspaper,
   },
 ];
 
-const Mission = () => {
+const Inside = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-6 w-full h-fit max-w-280">
       <div className="flex flex-col justify-center items-center gap-4.5 w-full h-fit">
@@ -56,16 +41,7 @@ const Mission = () => {
           technology.
         </p>
       </div>
-      <motion.div
-        className="grid grid-cols-3 grid-rows-2 w-full h-fit gap-6"
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.8 }}
-        transition={{
-          duration: 0.6,
-          ease: [0.16, 1, 0.3, 1],
-        }}
-      >
+      <div className="grid grid-cols-2 grid-rows-2 w-full h-fit gap-6">
         {cards.map((card, index) => (
           <Card
             key={index}
@@ -74,9 +50,9 @@ const Mission = () => {
             icon={card.icon}
           />
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
 
-export default Mission;
+export default Inside;
