@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -18,14 +19,12 @@ const CTA = () => {
               </p>
             </div>
             <div className="w-full h-fit flex justify-evenly items-center">
-              <Button text="Join Our Community" variant="primary" />
-              <Button text="Explore Events" variant="secondary" />
-              {/* <button className="w-fit h-fit px-6 py-3 bg-button-primary text-text-primary font-sora font-medium rounded-lg hover:bg-button-hover transition-colors duration-300">
-                Join Our Community
-              </button>
-              <button className="w-fit h-fit px-6 py-3 bg-button-primary text-text-primary font-sora font-medium rounded-lg hover:bg-button-hover transition-colors duration-300">
-                Join Our Community
-              </button> */}
+              <Link href="https://chat.whatsapp.com/HRSV9dESR03KfIJfEwQXf3">
+                <Button text="Join Our Community" variant="primary" />
+              </Link>
+              <Link href="/events">
+                <Button text="Explore Events" variant="secondary" />
+              </Link>
             </div>
           </div>
         </div>
