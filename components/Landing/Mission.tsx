@@ -46,21 +46,24 @@ const cards = [
 
 const Mission = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-6 w-full h-fit max-w-280">
+    <div className="relative flex flex-col justify-center items-center gap-6 w-full h-fit max-w-280 mx-auto z-0 py-10">
+      {/* Radial Purple Glow Background */}
+      <div className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#895BF5] opacity-20 md:opacity-[0.15] blur-[100px] md:blur-[140px] rounded-full pointer-events-none -z-10" />
+
       <div className="flex flex-col justify-center items-center gap-4.5 w-full h-fit">
-        <h2 className="font-sora font-semibold text-[40px] text-text-primary">
+        <h2 className="font-sora font-bold text-3xl md:text-[40px] text-[#F9FAFB] text-center px-4 md:px-0">
           Our Mission
         </h2>
-        <p className="font-inter text-base text-text-secondary w-full h-fit text-center">
+        <p className="font-inter text-base md:text-lg text-[#9CA3AF] w-full px-6 md:px-0 h-fit text-center">
           A space where ideas turn into projects and students grow through
           technology.
         </p>
       </div>
       <motion.div
-        className="grid grid-cols-3 grid-rows-2 w-full h-fit gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-fit gap-6 px-4 lg:px-0"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.1 }}
         transition={{
           duration: 0.6,
           ease: [0.16, 1, 0.3, 1],

@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="w-full h-fit flex justify-between items-start px-10 pb-24">
-      <div className="flex flex-col w-full h-fit justify-start items-start gap-14">
+    <div className="w-full h-fit flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-0 px-6 md:px-10 pb-24">
+      <div className="flex flex-col w-full h-fit justify-start items-start gap-10 md:gap-14">
         <div className="flex flex-col w-full h-fit justify-center items-center gap-12">
           <div className="flex flex-col w-full h-fit  justify-start items-start gap-4">
             <div className="flex w-fit h-fit justify-start items-center gap-2">
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="flex w-full h-fit  justify-start items-start gap-2.5">
             <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
               <Link href="https://www.linkedin.com/company/coderushx-community">
-                <Linkedin className="w-6 h-6 text-text-primary"/>
+                <Linkedin className="w-6 h-6 text-text-primary" />
               </Link>
             </div>
             {/* <div className="w-fit h-fit flex justify-center items-center gap-2.5 bg-linear-to-b from-primary from-[-42%] to-secondary to-127% rounded-md p-2">
@@ -48,7 +48,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="flex w-full h-fit justify-start items-start gap-12">
+      <div className="flex flex-col sm:flex-row flex-wrap lg:flex-nowrap w-full h-fit justify-start lg:justify-end items-start gap-8 md:gap-12">
         <div className="flex flex-col justify-center items-start w-full h-fit gap-5">
           <p className="w-fit h-fit font-sora text-xl text-text-secondary">
             Navigation

@@ -1,56 +1,50 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { UserCircleIcon } from "lucide-react";
-import React, { use } from "react";
+import React from "react";
+import Button from "../Button";
+import Link from "next/link";
 
-const lines = ["Building the Next Generation", "of Innovators."];
+const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const Hero = () => {
   return (
-    <div className="flex flex-col w-full h-fit justify-center items-center gap-6 max-w-section">
-      <div className="flex flex-col w-full h-fit justify-center items-center gap-2.5">
-        {/* <h1 className="text-[64px] text-text-primary font-sora font-bold text-center">
-          Building the Next Generation of Innovators.
-        </h1> */}
-        <h1 className="text-[64px] text-text-primary font-sora font-bold text-center">
-          {lines.map((line, index) => (
-            <div key={index} className="overflow-hidden">
-              <motion.div
-                initial={{
-                  y: 40,
-                  opacity: 0,
-                  filter: "blur(10px)",
-                  scale: 0.98,
-                }}
-                whileInView={{
-                  y: 0,
-                  opacity: 1,
-                  filter: "blur(0px)",
-                  scale: 1,
-                }}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.15,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-              >
-                {line}
-              </motion.div>
-            </div>
-          ))}
-        </h1>
+    <div className="flex flex-col w-full h-fit justify-center items-center gap-8 max-w-section mx-auto pt-6 md:pt-12">
+      <div className="flex flex-col w-full h-fit justify-center items-center gap-4">
+        {/* Heading */}
+        <motion.h1
+          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.7, delay: 0, ease: EASE }}
+          className="text-4xl md:text-5xl lg:text-[64px] text-text-primary font-sora font-bold text-center leading-[1.15]"
+        >
+          Building the Next Generation <br className="hidden md:block" /> of Innovators.
+        </motion.h1>
 
-        <p className="w-[60%] h-fit text-lg leading-[1.6em] tracking-[-0.02em] text-text-secondary font-inter text-center">
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 30, filter: "blur(6px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.7, delay: 0.2, ease: EASE }}
+          className="w-full sm:w-[80%] lg:w-[60%] h-fit text-base md:text-lg leading-[1.6em] tracking-[-0.02em] text-text-secondary font-inter text-center"
+        >
           A student-led tech community where ideas turn into projects, skills
           turn into impact, and beginners turn into builders.
-        </p>
+        </motion.p>
       </div>
-      <div className="flex w-full h-fit justify-center items-center gap-4">
-        <button>Join the club</button>
-        <button>Learn more</button>
-      </div>
+
+      {/* Buttons */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4, ease: EASE }}
+        className="flex flex-col sm:flex-row w-full h-fit justify-center items-center gap-3 sm:gap-4"
+      >
+        <Link href="https://chat.whatsapp.com/HRSV9dESR03KfIJfEwQXf3">
+          <Button text="Join the club" variant="primary" />
+        </Link>
+        <Button text="Learn more" variant="secondary" />
+      </motion.div>
     </div>
   );
 };

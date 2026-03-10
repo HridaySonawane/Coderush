@@ -9,14 +9,26 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full min-h-screen items-center justify-start px-16 bg-background font-sans dark:bg-black gap-16">
-      <Navbar />
-      <Hero />
-      <About />
-      <Mission />
-      <Timeline />
-      <CTA />
-      <Footer />
+    <div className="
+      flex flex-col
+      w-full min-h-screen
+      bg-background dark:bg-black
+      px-4 sm:px-6 md:px-10 lg:px-16
+    ">
+      <div className="
+        w-full
+        flex flex-col
+        gap-12 md:gap-16
+        lg:max-w-7xl lg:mx-auto
+      ">
+        <Navbar />
+        <Hero />
+        <About />
+        <Mission />
+        <Timeline />
+        <CTA />
+        <Footer />
+      </div>
     </div>
   );
 }

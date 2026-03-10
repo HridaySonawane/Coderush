@@ -37,11 +37,11 @@ const Timeline = () => {
     target: ref,
     offset: ["start center", "end center"],
   });
-  
+
   return (
-    <div ref={ref} className="w-full h-fit max-w-section flex flex-col justify-start items-center gap-6 max-w-280">
+    <div ref={ref} className="w-full h-fit max-w-section flex flex-col justify-start items-center gap-6 max-w-280 mx-auto">
       <div className="w-full h-fit">
-        <h2 className="text-text-primary font-sora font-semibold text-[40px] text-center w-full h-fit">
+        <h2 className="text-text-primary font-sora font-semibold text-3xl md:text-[40px] text-center w-full h-fit px-4 md:px-0">
           How We Grow
         </h2>
       </div>

@@ -5,42 +5,42 @@ import { div } from "framer-motion/client";
 import Button from "../Button";
 
 const cards: any[] = [
-  // {
-  //   name: "Snighdha",
-  //   description:
-  //     "Turn ideas into real-world applications through collaborative and hands-on development.",
-  //   role: "President",
-  // },
-  // {
-  //   name: "Snighdha",
-  //   description:
-  //     "Turn ideas into real-world applications through collaborative and hands-on development.",
-  //   role: "President",
-  // },
-  // {
-  //   name: "Snighdha",
-  //   description:
-  //     "Turn ideas into real-world applications through collaborative and hands-on development.",
-  //   role: "President",
-  // },
-  // {
-  //   name: "Snighdha",
-  //   description:
-  //     "Turn ideas into real-world applications through collaborative and hands-on development.",
-  //   role: "President",
-  // },
-  // {
-  //   name: "Snighdha",
-  //   description:
-  //     "Turn ideas into real-world applications through collaborative and hands-on development.",
-  //   role: "President",
-  // },
-  // {
-  //   name: "Snighdha",
-  //   description:
-  //     "Turn ideas into real-world applications through collaborative and hands-on development.",
-  //   role: "President",
-  // },
+  {
+    name: "Snighdha",
+    description:
+      "Turn ideas into real-world applications through collaborative and hands-on development.",
+    role: "President",
+  },
+  {
+    name: "Snighdha",
+    description:
+      "Turn ideas into real-world applications through collaborative and hands-on development.",
+    role: "President",
+  },
+  {
+    name: "Snighdha",
+    description:
+      "Turn ideas into real-world applications through collaborative and hands-on development.",
+    role: "President",
+  },
+  {
+    name: "Snighdha",
+    description:
+      "Turn ideas into real-world applications through collaborative and hands-on development.",
+    role: "President",
+  },
+  {
+    name: "Snighdha",
+    description:
+      "Turn ideas into real-world applications through collaborative and hands-on development.",
+    role: "President",
+  },
+  {
+    name: "Snighdha",
+    description:
+      "Turn ideas into real-world applications through collaborative and hands-on development.",
+    role: "President",
+  },
 ];
 
 const OurTeam = () => {
